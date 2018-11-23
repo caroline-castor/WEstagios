@@ -28,6 +28,66 @@
                         </span>
                     @endif
                 </div>
+                <div class="form-group has-feedback {{ $errors->has('address') ? 'has-error' : '' }}">
+                    <input type="text" name="address" class="form-control" value="{{ old('address') }}"
+                           placeholder="{{ trans('adminlte::adminlte.address') }}">
+                    <span class="glyphicon glyphicon-list form-control-feedback"></span>
+                    @if ($errors->has('address'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('address') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('educational_instituition') ? 'has-error' : '' }}">
+                    <input type="text" name="educational_instituition" class="form-control" value="{{ old('educational_instituition') }}"
+                           placeholder="{{ trans('adminlte::adminlte.educational_instituition') }}">
+                    <span class="glyphicon glyphicon-education form-control-feedback"></span>
+                    @if ($errors->has('educational_instituition'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('educational_instituition') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('educational_level') ? 'has-error' : '' }}">
+                    <input type="text" name="educational_level" class="form-control" value="{{ old('educational_level') }}"
+                           placeholder="{{ trans('adminlte::adminlte.educational_level') }}">
+                    <span class="glyphicon glyphicon-stats form-control-feedback"></span>
+                    @if ($errors->has('educational_level'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('educational_level') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('interest1') ? 'has-error' : '' }}">
+                    <input type="text" name="interest1" class="form-control" value="{{ old('interest1') }}"
+                           placeholder="{{ trans('adminlte::adminlte.interest1') }}">
+                    <span class="glyphicon glyphicon-triangle-right form-control-feedback"></span>
+                    @if ($errors->has('interest1'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('interest1') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('interest2') ? 'has-error' : '' }}">
+                    <input type="text" name="interest2" class="form-control" value="{{ old('interest2') }}"
+                           placeholder="{{ trans('adminlte::adminlte.interest2') }}">
+                    <span class="glyphicon glyphicon-triangle-right form-control-feedback"></span>
+                    @if ($errors->has('interest2'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('interest2') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('interest3') ? 'has-error' : '' }}">
+                    <input type="text" name="interest3" class="form-control" value="{{ old('interest3') }}"
+                           placeholder="{{ trans('adminlte::adminlte.interest3') }}">
+                    <span class="glyphicon glyphicon-triangle-right form-control-feedback"></span>
+                    @if ($errors->has('interest3'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('interest3') }}</strong>
+                        </span>
+                    @endif
+                </div>
                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">
                     <input type="email" name="email" class="form-control" value="{{ old('email') }}"
                            placeholder="{{ trans('adminlte::adminlte.email') }}">

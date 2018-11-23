@@ -68,7 +68,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'address' => isset($data['address']) ? $data['address'] : '',
-            'educational_institution' => isset($data['educational_instituition']) ? $data['educational_instituition'] : '',
+            'educational_instituition' => isset($data['educational_instituition']) ? $data['educational_instituition'] : '',
             'educational_level' => isset($data['educational_level']) ? $data['educational_level'] : '',
             'interest1' => isset($data['interest1']) ? $data['interest1'] : '' ,
             'interest2' => isset($data['interest2']) ? $data['interest2'] : '',
